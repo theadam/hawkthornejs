@@ -1,0 +1,10 @@
+{
+  "name": "project-hawkthorne",
+  "version": "1.0.0",
+  "author": "Adam Nalisnick",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "pngparse": "~2.0.1",
+    "xmlbuilder": "~2.2.1"
+  }
+}
