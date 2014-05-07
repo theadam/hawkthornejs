@@ -2,9 +2,10 @@ require.config({
   baseUrl: 'src',
   paths : {
     lib: '../lib',
-    media: '../media',
+    assets: '../assets',
     Phaser: '../lib/phaser',
-    PIXI: '../lib/phaser'
+    PIXI: '../lib/phaser',
+    text: '../lib/text'
   },
   map: {
     '*' : {
@@ -17,7 +18,7 @@ require.config({
 define(function(require){
   var game = require('game');
 
-  require('states/setup');
+  require('states/master');
 
   game.state.start('setup');
 });

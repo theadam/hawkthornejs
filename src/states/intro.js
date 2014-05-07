@@ -9,11 +9,14 @@ define(function(require){
   game.state.add('intro', {
 
     preload: function(){
-      game.load.audio('ending', 'media/audio/music/ending.ogg');
-      game.load.image('splash', 'media/images/menu/splash.png');
+      game.load.audio('ending', ['assets/audio/music/ending.mp3', 'assets/audio/music/ending.ogg']);
+      game.load.image('splash', 'assets/images/menu/splash.png');
     },
 
     create: function(){
+      game.input.onDown.add(function(){      
+        game.scale.startFullScreen();
+      });
       utils.playSong('ending');
       this.logo = game.add.sprite(0, 0, 'splash');
       this.logo.position.setTo(config.world_width / 2 - this.logo.width / 2, config.world_height / 2 - this.logo.height / 2);
