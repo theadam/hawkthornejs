@@ -4,7 +4,7 @@ require.config({
     lib: '../lib',
     assets: '../assets',
     Phaser: '../lib/phaser',
-    PIXI: '../lib/phaser',
+    PIXI: '../lib/pixi-wrapper',
     text: '../lib/text'
   },
   map: {

@@ -21,8 +21,8 @@ define(function(require){
       var xCorner = (config.world_width - background.width) / 2;
       var yCorner = (config.world_height - background.height) / 2;
       background.position.setTo(xCorner, yCorner);
-      background.animations.add('cycle', [1,2,3,4,5,6,7], 6/seconds);
-      background.animations.play('cycle');
+      background.animations.add('cycle', [1,2,3,4,5,6,7], 0.7);
+      console.log(background.animations.play('cycle').delay);
 
       var computer = game.add.sprite(xCorner + 162, yCorner + 150, 'computer');
       computer.animations.add('processing', [1,2,3,4,5,6,7,8,9], 12.5, true);
