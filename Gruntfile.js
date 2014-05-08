@@ -31,6 +31,8 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('default', ['clean', 'generate-fonts', 'requirejs', 'compress']);
+  grunt.registerTask('default', ['clean', 'generate-fonts', 'requirejs']);
+  grunt.registerTask('build-zip', ['clean', 'generate-fonts', 'requirejs', 'compress']);
+
 
 };
