@@ -1,12 +1,10 @@
-define(function(require){
-  require('states/setup');
-  require('states/intro');
-  require('states/boot');
-  require('states/start');
-  require('states/autosave-warning');
-  require('states/scanning');
-  require('states/options');
-  require('states/controls');
-  require('states/credits');
-  require('states/exit');
-});
+require('states/setup');
+require('states/intro');
+require('states/boot');
+require('states/start');
+require('states/autosave-warning');
+require('states/scanning');
+require('states/options');
+require('states/controls');
+require('states/credits');
+require('states/exit');
